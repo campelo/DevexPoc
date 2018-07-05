@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E5D49587-F8A6-4333-9136-B4BDAFAC0FED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>T461136</RootNamespace>
+    <AssemblyName>T461136</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1">
+      <HintPath>..\Devex\DevExpress.BonusSkins.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.Charts.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeConverter.v17.1">
+      <HintPath>..\Devex\DevExpress.CodeConverter.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.1">
+      <HintPath>..\Devex\DevExpress.CodeParser.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.1">
+      <HintPath>..\Devex\DevExpress.Data.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.1">
+      <HintPath>..\Devex\DevExpress.DataAccess.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.1.UI">
+      <HintPath>..\Devex\DevExpress.DataAccess.v17.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DemoData.v17.1">
+      <HintPath>..\Devex\DevExpress.DemoData.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DemoData.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.DemoData.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.Diagram.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v17.1">
+      <HintPath>..\Devex\DevExpress.Images.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Map.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.Map.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v17.1">
+      <HintPath>..\Devex\DevExpress.Mvvm.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.Office.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.Pdf.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Drawing">
+      <HintPath>..\Devex\DevExpress.Pdf.v17.1.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.PivotGrid.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.Printing.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v16.2.Export" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.RichEdit.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v17.1">
+      <HintPath>..\Devex\DevExpress.Snap.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.Snap.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v17.1.Extensions">
+      <HintPath>..\Devex\DevExpress.Snap.v17.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.Sparkline.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.SpellChecker.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.Spreadsheet.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v17.1">
+      <HintPath>..\Devex\DevExpress.Tutorials.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1">
+      <HintPath>..\Devex\DevExpress.Utils.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1.UI">
+      <HintPath>..\Devex\DevExpress.Utils.v17.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGauges.v17.1">
+      <HintPath>..\Devex\DevExpress.Web.ASPxGauges.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v17.1">
+      <HintPath>..\Devex\DevExpress.Web.ASPxHtmlEditor.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v17.1">
+      <HintPath>..\Devex\DevExpress.Web.ASPxPivotGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v17.1">
+      <HintPath>..\Devex\DevExpress.Web.ASPxScheduler.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v17.1">
+      <HintPath>..\Devex\DevExpress.Web.ASPxSpellChecker.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpreadsheet.v17.1">
+      <HintPath>..\Devex\DevExpress.Web.ASPxSpreadsheet.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v17.1">
+      <HintPath>..\Devex\DevExpress.Web.ASPxThemes.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v17.1">
+      <HintPath>..\Devex\DevExpress.Web.ASPxTreeList.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v17.1">
+      <HintPath>..\Devex\DevExpress.Web.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Accordion.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Accordion.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Carousel.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Carousel.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Charts.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Charts.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Controls.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Controls.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Core.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v17.1.Extensions">
+      <HintPath>..\Devex\DevExpress.Xpf.Core.v17.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Diagram.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Diagram.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Docking.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Docking.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.DocumentViewer.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.Xpf.DocumentViewer.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Gauges.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Gauges.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Grid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.Xpf.Grid.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v17.1.Extensions">
+      <HintPath>..\Devex\DevExpress.Xpf.Grid.v17.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Layout.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.Xpf.Layout.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.LayoutControl.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.LayoutControl.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Map.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Map.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.NavBar.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.NavBar.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.PdfViewer.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.PdfViewer.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.PivotGrid.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.PivotGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Printing.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Printing.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.PrismAdapters.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.PrismAdapters.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.PropertyGrid.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.PropertyGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.ReportDesigner.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.ReportDesigner.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Ribbon.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Ribbon.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.RichEdit.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.RichEdit.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Scheduler.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Scheduler.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Scheduling.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Scheduling.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.SpellChecker.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.SpellChecker.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Spreadsheet.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Spreadsheet.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.DXStyle.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.DXStyle.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.HybridApp.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.HybridApp.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.LightGray.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.LightGray.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.MetropolisDark.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.MetropolisDark.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.MetropolisLight.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.MetropolisLight.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2007Black.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2007Black.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2007Blue.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2007Blue.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2007Silver.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2007Silver.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2010Black.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2010Black.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2010Blue.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2010Blue.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2010Silver.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2010Silver.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2013.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2013.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2013DarkGray.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2013DarkGray.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2013LightGray.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2013LightGray.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016Black.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2016Black.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016Colorful.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2016Colorful.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016ColorfulSE.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2016ColorfulSE.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016DarkGraySE.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2016DarkGraySE.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016White.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2016White.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016WhiteSE.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Office2016WhiteSE.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Seven.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.Seven.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.TouchlineDark.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.TouchlineDark.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.VS2010.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.Themes.VS2010.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.TreeMap.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpf.TreeMap.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v17.1">
+      <HintPath>..\Devex\DevExpress.Xpo.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraBars.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraCharts.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.Extensions">
+      <HintPath>..\Devex\DevExpress.XtraCharts.v17.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI">
+      <HintPath>..\Devex\DevExpress.XtraCharts.v17.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.Web">
+      <HintPath>..\Devex\DevExpress.XtraCharts.v17.1.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard">
+      <HintPath>..\Devex\DevExpress.XtraCharts.v17.1.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraDiagram.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v17.1.Design">
+      <HintPath>..\Devex\DevExpress.XtraDiagram.v17.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraEditors.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.XtraGauges.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.1.Presets">
+      <HintPath>..\Devex\DevExpress.XtraGauges.v17.1.Presets.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.1.Win">
+      <HintPath>..\Devex\DevExpress.XtraGauges.v17.1.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraLayout.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraMap.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraNavBar.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraPdfViewer.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraPivotGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraPrinting.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraReports.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions">
+      <HintPath>..\Devex\DevExpress.XtraReports.v17.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1.Service">
+      <HintPath>..\Devex\DevExpress.XtraReports.v17.1.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1.Web">
+      <HintPath>..\Devex\DevExpress.XtraReports.v17.1.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraRichEdit.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.1.Extensions">
+      <HintPath>..\Devex\DevExpress.XtraRichEdit.v17.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraScheduler.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Core">
+      <HintPath>..\Devex\DevExpress.XtraScheduler.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Extensions">
+      <HintPath>..\Devex\DevExpress.XtraScheduler.v17.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Reporting">
+      <HintPath>..\Devex\DevExpress.XtraScheduler.v17.1.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Reporting.Extensions">
+      <HintPath>..\Devex\DevExpress.XtraScheduler.v17.1.Reporting.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraSpellChecker.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraSpreadsheet.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraTreeList.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraVerticalGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v17.1">
+      <HintPath>..\Devex\DevExpress.XtraWizard.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomLabel\CustomLabel.csproj">
+      <Project>{F110D4F8-F891-49FE-AD04-E539BC751F54}</Project>
+      <Name>CustomLabel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
